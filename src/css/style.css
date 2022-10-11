@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.mx-width {
+    max-width: 330px;
+}
+
+.main-container {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 0 0 50px 0;
+}
+
+.content-container {
+    max-width: 700px;
+}
+
+.container {
+    margin-top: 20%;
+}
+
+.home_blob {
+    width: 250px;
+    fill: rgb(198, 89, 0);
+  }
+  
+.home_blob-img {
+    width: 250px;
+  }
+  .type {
+    display: inline-block;
+  }
+  .type > span {
+    display: grid;
+    overflow: hidden;
+    height: 1.2em;
+  }
+  .type span span {
+    color: rgb(255, 170, 0);
+    font-size: 30px;
+    width: 0%;
+    max-width: max-content;
+    overflow: hidden;
+    height: inherit;
+    word-break: break-all;
+    animation: 
+    c 0.05s infinite steps(1),
+    t 2s linear infinite alternate,
+    m 12s steps(3) infinite;
+  }
+  .type span span::before {
+    content: '';
+    display: inline-block;
+  }
+  @keyframes t {
+    90%,100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes c{
+    0%,100% {
+      box-shadow: 5px 0 0 #0000;
+    }
+    50% {
+      box-shadow: 5px 0 0 rgb(226, 53, 0);
+    }
+  }
+  @keyframes m {
+    100% {
+      transform: translateY(-300%);
+    }
+  }
+.container,
+.aboutMe,
+.resume,
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-desc h1 {
+    margin: 50px 0 2px 0;
+}
+
+.main-desc .white {
+    color: white;
+    font-size: 38px;
+}
+
+.aboutMe-container {
+    margin: 200px 0 0 0;
+}
+
+.aboutMe {
+    margin: 0 0 100px 0;
+}
+.aboutMe-container h2,
+.resume h2 {
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+.aboutMe-desc p {
+    font-size: 14px;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.aboutMe-img {
+    margin: 40px 0 0 0;
+} 
+
+table {
+    font-size: 15px;
+}
+
+table tr td:nth-child(1) {
+    width: 100px;
+}
+
+table tr td:nth-child(2) {
+    width: 10px;
+}
+
+.resume .resume-desc {
+    text-align: center;
+}
+
+.resume-desc {
+    max-width: 60%;
+}
+
+.resume p {
+    margin: 20px 0 50px 0;
+    font-size: 13px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-details {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 30px 0 30px;
+    max-width: 400px;
+    background-color: rgb(32, 32, 32);
+}
+
+.education-title {
+    margin: 10px;
+    line-height: 25px;
+}
+
+.education-title h3 {
+    color: rgb(255, 170, 0)
+}
+
+.footer-container {
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 5px;
+}
+
+@media screen and (min-width: 800px) {
+
+    .container,
+    .aboutMe,
+    .education {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container {
+        flex-direction: row-reverse;
+    }
+
+    .aboutMe-img-profile {
+        width: 250px;
+        margin: 0 90px 0 0;
+    }
+    .home_blob {
+        width: 300px;
+      }
+      
+}
